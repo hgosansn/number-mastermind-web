@@ -17,7 +17,7 @@ export class AppComponent {
 
   constructor() {
     this.reset();
-    //this.unitTests();
+    this.unitTests();
   }
 
   unitTests() {
@@ -36,7 +36,7 @@ export class AppComponent {
         mastermind.getClue(testPair.answer) == testPair.clue,
         testPair
       );
-      this.attempts.push(mastermind.play(testPair.answer));
+      //this.attempts.push(mastermind.play(testPair.answer));
     });
   }
 

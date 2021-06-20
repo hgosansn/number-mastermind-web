@@ -17,7 +17,7 @@ export class AppComponent {
 
   constructor() {
     this.reset();
-    this.unitTests();
+    //this.unitTests();
   }
 
   unitTests() {

@@ -1,0 +1,49 @@
+<div class="playground">
+  <h2>
+    MasterMind
+  </h2>
+  <!--  <p>
+    Quand le jeu commence un code secret de 4 digits est généré, le but du jeu
+    est de trouver le code. Le joueur doit être capable de proposer un code à 4
+    chiffres et le jeu lui affiche des signes pour l'aider. Le jeu termine quand
+    le joueur a trouvé la combinaison exacte du code secret
+  </p>
+  <p>
+    <li>1 - Le jeu retournera un signe + pour un match exact</li>
+    <li>2 - Le jeu retournera un signe - pour un match partiel</li>
+    <li>
+      3 - Un match exact est un digit à la bonne valeur et la bonne position par
+      rapport au code secret
+    </li>
+    <li>
+      4 - Un match partiel est un digit à la bonne valeur mais à la mauvaise
+      position par rapport au code secret
+    </li>
+    <li>
+      5 - Les matchs exacts sont prioritaires par rapport aux matchs partiels
+    </li>
+    <li>
+      6 - Une fois qu'un digit a été utilisé pour un match, il ne peut plus être
+      utilisé pour un autre match
+    </li>
+  </p>-->
+  <p>{{hints}}</p>
+  <section>
+    <input
+      type="text"
+      class="playground_input"
+      #userInput
+      (keyup)="keyPressed($event)"
+      name="masterMindAnswer"
+      placeholder="Input some number..."
+    />
+    <button class="playground_input userInteraction" (click)="reset()">
+      Reset
+    </button>
+  </section>
+  <div class="playground_output">
+    <pre *ngFor="let i of attempts">
+      {{i}}
+    </pre>
+  </div>
+</div>
